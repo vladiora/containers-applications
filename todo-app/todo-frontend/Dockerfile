@@ -9,6 +9,8 @@ RUN CI=true npm test
 
 FROM test-stage AS build-stage
 
+ENV REACT_APP_BACKEND_URL=http://localhsot:3001
+
 RUN npm run build
 
 FROM nginx:1.20-alpine

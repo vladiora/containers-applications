@@ -1,0 +1,8 @@
+# node.js modules
+node_modules
+
+# dotenv environment variable
+.env
+
+#mongo
+mongo_data
